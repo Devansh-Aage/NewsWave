@@ -1,71 +1,61 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# NewsWave-News App
 
-## Available Scripts
+NewsWave, my latest web project, blends React and NewsAPI for a personalized news experience. Explore diverse categories, enjoy seamless responsiveness, and read comfortably day or night with dark mode. Effortless news browsing is facilitated by infinite scroll. Challenges in integrating these features provided valuable learning experiences, enhancing my skills in state management and asynchronous operations in React. While not for public release, NewsWave reflects my commitment to growth in web development. Feedback is appreciated, and collaboration opportunities are welcome on this dynamic coding journey! 🚀
 
-In the project directory, you can run:
 
-### `npm start`
+## Acknowledgements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+ - [News API](https://newsapi.org/)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## API Reference
 
-### `npm run build`
+#### Select Country
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```http
+  GET /api/?country=${country}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `country` | `string` | Your Desired Country |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### Get item
 
-### `npm run eject`
+```http
+  GET /api/&category=${category}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| category      | `string` | Your Desired Category |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Features
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+🌐 Diverse Categories: Explore an extensive array of topics to stay informed and engaged.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+💻 Responsive Design: Enjoy a seamless and optimized user experience across different devices.
 
-### Code Splitting
+🎨 Dark Mode: Elevate aesthetics and usability, providing comfortable reading day or night.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+♻️ Infinite Scroll: Effortless news exploration with a continuous flow of content.
 
-### Analyzing the Bundle Size
+🔄 React Magic: Immerse yourself in a dynamic and interactive interface crafted with class-based components.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🔗 NewsAPI Integration: Ensure real-time data retrieval, keeping your newsfeed constantly updated.
 
-### Making a Progressive Web App
+## Lessons Learned
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+NewsWave's development presented both challenges and opportunities for growth. Integrating the infinite scroll feature, while enhancing user experience, posed intricacies in managing component states efficiently. Additionally, optimizing NewsAPI integration for seamless data retrieval required a nuanced understanding of asynchronous operations in React.
 
-### Advanced Configuration
+These challenges fueled my learning journey. I gained insights into efficient state management in class-based components, refined my skills in handling asynchronous operations, and deepened my understanding of dynamic content rendering in React.
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# NewsWave
+![App Screenshot](Preview1.png)
+![App Screenshot](Preview2.png)
+![App Screenshot](Preview3.png)
